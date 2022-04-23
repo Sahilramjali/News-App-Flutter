@@ -1,6 +1,6 @@
 # newsapp
 
-A News app consits of single page where news article data are displayed from given api link.<br/>
+A News app consits of splash page and homepage.Homepage display  news article data fetched from given api link.If skip button in splash page is not pressed then splash screen will naviaget to homepage after 5 second. <br/>
 Data are fetched from api with the help of http package.<br/>
 API link :<br/>
 https://newsapi.org/v2/everything?q=bitcoin&apiKey=d394960d6d364a9eacb07e25ed5d5e76 <br/>
