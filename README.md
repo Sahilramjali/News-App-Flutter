@@ -2,6 +2,9 @@
 
 A News app consits of splash page and homepage.Homepage display  news article data fetched from given api link.If skip button in splash page is not pressed then splash screen will naviaget to homepage after 5 second. <br/>
 Data are fetched from api with the help of http package.<br/>
+Flutter verison:2.10.5<br/>
+channel :Stable<br/>
+Dart version :2.16.2<br/>
 API link :<br/>
 https://newsapi.org/v2/everything?q=bitcoin&apiKey=d394960d6d364a9eacb07e25ed5d5e76 <br/>
 
