@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newsapp/pages/home_page.dart';
+
+import 'package:newsapp/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        title: 'News App', debugShowCheckedModeBanner: false, home: Homepage());
+        title: 'News App',
+        debugShowCheckedModeBanner: false,
+        home: SplashPage());
   }
 }
