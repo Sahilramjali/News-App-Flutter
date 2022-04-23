@@ -12,7 +12,7 @@ lottie :https://pub.dev/packages/lottie <br/>
 Home page:<br/>
 ![fetcheddatadisplay](https://user-images.githubusercontent.com/35887583/164889647-f0c86692-1f76-4a84-9e04-8139b2b5809a.png)<br/>
 
-slpash page:<br/>
+splash page:<br/>
 ![splashscreen](https://user-images.githubusercontent.com/35887583/164889664-86155502-2cf5-4b6b-a047-dca9681986ef.png)
 <br/>
 
