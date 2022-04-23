@@ -1,3 +1,4 @@
+//Model
 class ArticleModel {
   String title;
   String description;

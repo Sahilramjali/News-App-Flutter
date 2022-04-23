@@ -27,6 +27,7 @@ class NewsTile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              //display image of  the article
               ClipRRect(
                 borderRadius: BorderRadius.circular(6),
                 child: Image.network(
@@ -39,6 +40,7 @@ class NewsTile extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
+              //display heading of the article  with max 2 line
               Text(
                 heading,
                 maxLines: 2,
@@ -50,6 +52,7 @@ class NewsTile extends StatelessWidget {
               const SizedBox(
                 height: 4,
               ),
+              //display summary of the article with max 2 line
               Text(
                 summary,
                 maxLines: 2,

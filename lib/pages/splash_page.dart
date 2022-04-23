@@ -15,10 +15,11 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
+    //waits for 5 second and navigate to the homepage
     timer = Timer(const Duration(seconds: 5), () => route());
-    setState(() {});
   }
 
+//route() navigate to the homepage
   route() {
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: ((_) => const Homepage())));
@@ -27,6 +28,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void dispose() {
     super.dispose();
+
     timer.cancel();
   }
 
@@ -68,6 +70,7 @@ class _SplashPageState extends State<SplashPage> {
             ),
             ElevatedButton(
               onPressed: () {
+                //cancel the time before timer reached to 5 second if the Skip button is pressed
                 timer.cancel();
                 route();
               },

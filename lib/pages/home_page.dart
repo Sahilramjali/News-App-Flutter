@@ -49,6 +49,7 @@ class _HomepageState extends State<Homepage> {
                     itemCount: newlist.length,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
+                      //newsTile is custom widget which accepts imgurl,heading and summary and render on screen
                       return NewsTile(
                           imgUrl: newlist[index].urlToImage,
                           heading: newlist[index].title,
