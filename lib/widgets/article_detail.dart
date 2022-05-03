@@ -1,37 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:newsapp/widgets/article_detail.dart';
 
-class NewsTile extends StatelessWidget {
-  final String imgUrl, heading, summary, content;
-
-  const NewsTile(
+class ArticleDetail extends StatelessWidget {
+  final String imgUrl, heading, summary;
+  const ArticleDetail(
       {Key? key,
       required this.imgUrl,
       required this.heading,
-      required this.summary,
-      required this.content})
+      required this.summary})
       : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => ArticleDetail(
-                      imgUrl: imgUrl,
-                      heading: heading,
-                      summary: content,
-                    )));
-      },
-      child: Container(
+    return Scaffold(
+      appBar: AppBar(title: const Text("details")),
+      body: Container(
           margin: const EdgeInsets.only(bottom: 20, top: 5, left: 5, right: 5),
           width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              alignment: Alignment.bottomCenter,
+              alignment: Alignment.topCenter,
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(6),
@@ -44,7 +34,7 @@ class NewsTile extends StatelessWidget {
                       borderRadius: BorderRadius.circular(6),
                       child: Image.network(
                         imgUrl,
-                        height: 200,
+                        height: MediaQuery.of(context).size.height * 0.45,
                         width: MediaQuery.of(context).size.width,
                         fit: BoxFit.fill,
                       )),
@@ -53,7 +43,7 @@ class NewsTile extends StatelessWidget {
                   ),
                   Text(
                     heading,
-                    maxLines: 2,
+                    maxLines: 6,
                     style: const TextStyle(
                         color: Colors.black87,
                         fontSize: 20,
@@ -64,7 +54,7 @@ class NewsTile extends StatelessWidget {
                   ),
                   Text(
                     summary,
-                    maxLines: 2,
+                    maxLines: 25,
                     style: const TextStyle(color: Colors.black54, fontSize: 14),
                   )
                 ],

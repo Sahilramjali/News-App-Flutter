@@ -51,9 +51,11 @@ class _HomepageState extends State<Homepage> {
                     itemBuilder: (context, index) {
                       //newsTile is custom widget which accepts imgurl,heading and summary and render on screen
                       return NewsTile(
-                          imgUrl: newlist[index].urlToImage,
-                          heading: newlist[index].title,
-                          summary: newlist[index].description);
+                        imgUrl: newlist[index].urlToImage,
+                        heading: newlist[index].title,
+                        summary: newlist[index].description,
+                        content: newlist[index].content,
+                      );
                     }),
               ));
   }
